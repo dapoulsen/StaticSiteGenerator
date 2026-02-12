@@ -5,7 +5,6 @@ from htmlnode import HTMLNode
 class TestHTMLNode(unittest.TestCase):
     def test_print(self):
         htmlnode = HTMLNode("p", 'Hello there')
-        print(htmlnode)
     
     def test_props_to_html(self):
         node = HTMLNode("a", "IMG", None, {"href": "www.image.com", "target": "_blank",})
