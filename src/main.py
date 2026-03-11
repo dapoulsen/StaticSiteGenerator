@@ -1,4 +1,4 @@
-from website import copy_content_to_directory
+from website import copy_content_to_directory, generate_page
 
 def main():
     source_dir = "static"
@@ -6,6 +6,7 @@ def main():
 
     copy_content_to_directory(source_dir, destination_dir)
    
+    generate_page("./content/index.md", "./template.html", "./public/index.html")
 
 if __name__ == "__main__":
     main()
